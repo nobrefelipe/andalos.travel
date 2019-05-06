@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>book_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="Homepage-MPV" transform="translate(-459.000000, -952.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Header" transform="translate(0.000000, 306.000000)">
+                <g id="trip-card-active" transform="translate(182.000000, 70.000000)">
+                    <g id="Book" transform="translate(33.000000, 547.000000)">
+                        <path d="M259.320077,36.0260159 L254.329368,30.6825777 C253.952393,30.2789589 253.973992,29.6461624 254.377611,29.2691872 C254.78123,28.892212 255.414026,28.9138108 255.791001,29.3174296 L262.480319,36.4795299 C262.848927,36.8741902 262.837607,37.4902153 262.454748,37.8710667 L255.765431,44.5253143 C255.373881,44.9148108 254.740719,44.9131467 254.351222,44.5215974 C253.961725,44.130048 253.96339,43.4968852 254.354939,43.1073887 L259.463092,38.0260159 L245,38.0260159 C244.447715,38.0260159 244,37.5783007 244,37.0260159 C244,36.4737312 244.447715,36.0260159 245,36.0260159 L259.320077,36.0260159 Z" id="book_arrow"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

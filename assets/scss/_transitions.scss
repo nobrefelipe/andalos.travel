@@ -1,0 +1,44 @@
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s ease;
+
+}
+
+.fade-leave {
+  /*opacity: 1;*/
+}
+
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+
+
+
+.slide-leave-active,
+.slide-enter-active {
+
+  transition: all .3s ease-in;
+
+}
+
+.slide-enter {
+
+  transform: translateY(70%);
+
+  opacity: 0;
+}
+
+.slide-leave-to {
+
+  transform: translateY(70%);
+
+  opacity: 0;
+
+}

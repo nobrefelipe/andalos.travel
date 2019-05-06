@@ -1,0 +1,77 @@
+.itinerary-experiences{
+
+  position: relative;
+
+  z-index: 10;
+
+  background: #f9f9f9;
+
+  box-shadow: 0 0 20px 1px rgba(0,0,0,.05);
+
+  padding: 50px 20px 20px 20px;
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto 80px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+
+  h3{
+
+    float: left;
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+  }
+
+  &--item{
+
+    flex: 1 1 100px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    margin: 20px 0;
+
+    &:nth-of-type(1){ svg{ fill: #fd6755}}
+    &:nth-of-type(2){ svg{ fill: #7de7c9}}
+    &:nth-of-type(3){ svg{ fill: #fbd80d}}
+    &:nth-of-type(4){ svg{ fill: #f6014e}}
+    &:nth-of-type(5){ svg{ fill: #24a06e}}
+
+    svg{
+
+      height: 70px;
+
+    }
+
+    span{
+
+      font-weight: 500;
+
+    }
+
+
+    @include mobile{
+
+      svg{ height: 50px}
+
+    }
+
+  }
+
+}

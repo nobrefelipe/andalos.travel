@@ -1,0 +1,94 @@
+.dashboard-user-itineraries{
+
+  float: left;
+
+  width: 100%;
+
+  .itinerary-item{
+
+    float: left;
+
+    width: calc(25% - 20px);
+
+    margin: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+
+    @include laptop{ width: calc(33% - 20px); }
+
+    @include desktop{ width: calc(25% - 20px); }
+
+    @include small{ width: calc(50% - 20px); }
+
+    @include mobile{ width: 100%; margin: 20px 0; }
+
+
+    .ant-card-cover{
+
+      width: 100%;
+
+      height: 150px;
+
+      overflow: hidden;
+
+      img{
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: 50% 50%;
+
+      }
+
+    }
+
+    .ant-card-meta-description{
+
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+    }
+
+    .ant-card-actions{
+
+      li{margin: 0}
+
+      span{width: 100%}
+
+
+      a,button{
+
+        width: 100%;
+
+        height: 40px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background: transparent;
+
+        border: 0;
+
+        i{font-size: 18px}
+
+      }
+
+    }
+
+
+    &.deleting{ opacity: 0.2}
+
+  }
+
+}

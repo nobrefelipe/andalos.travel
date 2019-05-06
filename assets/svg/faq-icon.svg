@@ -1,0 +1,16 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_ask_svg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-MPV" transform="translate(-1167.000000, -3509.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Ask" transform="translate(1040.000000, 3382.000000)">
+                <g id="ic_about" transform="translate(104.000000, 104.000000)">
+                    <path d="M31.5857864,51.5857864 C31.9608592,51.2107137 32.469567,51 33,51 L57,51 C58.1045695,51 59,50.1045695 59,49 L59,29 C59,27.8954305 58.1045695,27 57,27 L29,27 C27.8954305,27 27,27.8954305 27,29 L27,56.1715729 L31.5857864,51.5857864 Z M33.8284271,55 L26.4142136,62.4142136 C25.1542838,63.6741433 23,62.7818097 23,61 L23,29 C23,25.6862915 25.6862915,23 29,23 L57,23 C60.3137085,23 63,25.6862915 63,29 L63,49 C63,52.3137085 60.3137085,55 57,55 L33.8284271,55 Z" id="ic_ask_svg"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

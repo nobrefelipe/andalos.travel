@@ -1,0 +1,4 @@
+targets:
+  prod: shared-us-west-2/cjtmzsfb01eyx0101gd3m8hyx
+  default: prod
+

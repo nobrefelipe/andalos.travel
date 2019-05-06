@@ -1,0 +1,17 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>fb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7,0 L17,0 C20.8659932,-7.10171439e-16 24,3.13400675 24,7 L24,17 C24,20.8659932 20.8659932,24 17,24 L7,24 C3.13400675,24 4.73447626e-16,20.8659932 0,17 L0,7 C-4.73447626e-16,3.13400675 3.13400675,7.10171439e-16 7,0 Z" id="path-1"></path>
+    </defs>
+    <g id="fb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#E95556" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <path d="M15.11625,7.992 L13.98675,7.99275 C13.101,7.99275 12.92925,8.4135 12.92925,9.03075 L12.92925,10.39275 L15.042,10.39275 L14.76675,12.5265 L12.92925,12.5265 L12.92925,18 L10.7265,18 L10.7265,12.5265 L8.8845,12.5265 L8.8845,10.39275 L10.7265,10.39275 L10.7265,8.82 C10.7265,6.99375 11.84175,6 13.47,6 C14.25,6 14.9205,6.05775 15.11625,6.084 L15.11625,7.992 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+    </g>
+</svg>

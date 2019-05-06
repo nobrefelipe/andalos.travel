@@ -1,0 +1,291 @@
+.itineraries{
+
+  float: left;
+
+  width: 100%;
+
+  //overflow: hidden;
+
+  display: flex;
+
+  .outter{
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    @include mobile{
+
+      width: 100vw;
+
+      flex-wrap: nowrap;
+
+      //overflow-y: hidden;
+
+      scroll-snap-type: x mandatory;
+      scroll-snap-type: mandatory;
+      scroll-snap-destination: 0 50%;
+      scroll-snap-points-x: repeat(100%);
+      -webkit-overflow-scrolling: touch;
+
+    }
+
+
+  }
+
+  .itinerary-item{
+
+    --margin: 20px;
+
+    $gap: calc(2 * var(--margin));
+
+    margin: 0 var(--margin) var(--margin) var(--margin);
+
+    //width: calc(33.3333% - #{$gap});
+
+    min-width: calc(375px - #{$gap} - 40px);
+
+    max-width: 50%;
+
+    flex: 1;
+
+    box-shadow: 0 0 20px 1px rgba(0,0,0,.05);
+
+    text-decoration: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: all .3s ease;
+
+    background: #fff;
+
+    scroll-snap-align: center;
+
+    scroll-snap-coordinate: 0 0;
+
+    @include mobile{
+
+      --margin: 10px;
+
+      min-width: 240px;
+
+    }
+
+
+    &:hover{
+
+      box-shadow: 0 0 30px 1px rgba(0,0,0,.1);
+
+      h3{color: $yellow;}
+
+    }
+
+    transform-origin: left top;
+
+
+    &.tile--slide-in{
+      transition: all .2s ease;
+      transform: var(--translate-tile);
+
+      .itinerary-item--body{opacity: 0;transition: all .2s ease;}
+
+    }
+
+    &--image{
+
+      width: 100%;
+
+      height: 210px;
+
+      overflow: hidden;
+
+      margin: 0;
+
+      img{
+
+        width: 100%;
+
+        height: 100%;
+
+        object-position: 50% 50%;
+
+        object-fit: cover;
+
+        display: block;
+
+      }
+
+      @include mobile{
+
+        height: 100px;
+
+      }
+
+    }
+
+    &--body{
+
+      float: left;
+
+      width: 100%;
+
+      padding: 20px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      flex: 1;
+
+      @include mobile{padding: 20px 10px}
+
+    }
+
+    &--title{
+
+      font-size: 24px;
+
+      line-height: 28px;
+
+      font-family: $trade-gothic;
+
+      text-transform: uppercase;
+
+      transition: .3s ease;
+
+      margin: 0;
+
+
+      @include mobile{
+
+        font-size: 18px;
+
+        line-height: 24px;
+
+      }
+
+    }
+
+    &--designer{
+
+      font-size: 14px;
+
+      color: $grey;
+
+      margin-top: auto;
+    }
+
+    &--rate{
+
+      .ant-rate-star{
+
+        margin: 0 4px 0 0;
+
+        .anticon{font-size: 12px}
+
+      }
+
+    }
+
+    &--meta{
+
+      float: left;
+
+      width: 100%;
+
+      list-style: none;
+
+      margin: 5px 0 20px 0;
+
+      padding: 0;
+
+
+      li{
+
+       float: left;
+
+        color: $grey;
+
+        font-size: 14px;
+
+        &:not(:last-of-type){
+
+          &:after{
+
+            content: "•";
+
+            margin: 0 5px;
+
+          }
+
+        }
+
+        @include mobile{font-size: 13px}
+      }
+    }
+
+  }
+
+
+  /* SHIMMER LOADERS */
+  .ant-skeleton-header{
+
+    width: 100%;
+
+    height: 210px;
+
+    margin: 0; padding: 0;
+
+    @include mobile{
+
+      height: 135px;
+
+    }
+
+    .ant-skeleton-avatar{
+
+      width: 100%;
+
+      height: 100%;
+
+      border-radius: 0;
+
+    }
+
+  }
+  .ant-skeleton-title{display: none;}
+  .ant-skeleton-content{
+
+    padding: 20px; margin: 0;
+
+    .ant-skeleton-paragraph{ margin: 0; padding: 0;}
+
+  }
+
+  @include mobile{
+
+    width: 100vw !important;
+
+    margin-left: -20px;
+
+
+  }
+
+}
+
+
+@keyframes tile-move {
+  from {
+    transform-origin: left top;
+    transform: var(--translate-tile);
+  }
+  to {
+    transform-origin: left top;
+  }
+}

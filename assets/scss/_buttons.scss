@@ -1,0 +1,47 @@
+.button{
+
+  transition: all .3s ease;
+
+  text-decoration: none;
+
+  display: flex;
+
+  cursor: pointer;
+
+  &.primary{
+
+    background: $light-yellow;
+
+    color: $dark-grey;
+
+    padding: 15px 50px;
+
+    font-weight: bold;
+
+    @extend .roboto;
+
+    svg {
+
+      transform: translate(15px, 2px);
+
+      transition: all .3s ease;
+
+      path { opacity: 1; fill: $dark-grey; }
+
+    }
+
+  }
+
+  &:hover{
+
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+
+    background-color: $yellow;
+
+    svg { transform: translate(20px, 2px);}
+
+  }
+
+  @include mobile{ width: 100%; justify-content: center}
+
+}

@@ -1,0 +1,13 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>faq_cross</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="faq_cross" transform="translate(8.071068, 8.071068) rotate(-45.000000) translate(-8.071068, -8.071068) translate(3.071068, 3.071068)" fill-rule="nonzero" stroke="#FC5774" stroke-width="2.66666667">
+            <path d="M0.714285714,9.28571429 L9.28571429,0.714285714" id="crossl2"></path>
+            <path d="M0.714285714,9.28571429 L9.28571429,0.714285714" id="crossl1" transform="translate(5.000000, 5.000000) scale(-1, 1) translate(-5.000000, -5.000000) "></path>
+        </g>
+    </g>
+</svg>

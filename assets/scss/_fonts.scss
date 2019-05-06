@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Futura W01 ExtraBold Condensed";
+  src:  url("~static/fonts/futura-extra-bold-condensed.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic Condensed Bold";
+  src:  url("~static/fonts/trade-gothic-pro-condensed-bold.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@import "font-roboto";
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+
+$futura: "Futura W01 ExtraBold Condensed";
+$trade-gothic: "Trade Gothic Condensed Bold";
+
+.roboto{
+
+  font-family: "Roboto";
+
+  font-weight: 300;
+
+  &-bold{ font-weight: 500}
+
+}

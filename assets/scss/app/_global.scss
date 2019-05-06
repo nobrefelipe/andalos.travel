@@ -1,0 +1,80 @@
+
+.main-content{
+
+  float: left;
+
+  width: 100%;
+
+  padding-top: 0; // 50px header
+
+  @include mobile{ padding-top: 50px;}
+
+  --page-padding: 20px;
+
+  .wrapper{
+
+    width: 100%;
+
+    max-width: $max-width;
+
+    padding: 0 var(--page-padding);
+
+    margin: 0 auto;
+
+
+    &.no-left-padding{ padding-left: 0;}
+
+  }
+
+}
+
+
+
+
+
+
+.row{
+
+  float: left;
+
+  width: 100%;
+
+  &.spaced{
+
+    margin: 50px 0;
+
+  }
+
+}
+
+
+.body-content{
+
+  &.left { text-align: left}
+  &.center { text-align: center  ;}
+  &.right { text-align: right ;}
+
+
+  @include desktop{ padding: 80px 25% 65px 25%; }
+
+  @include laptop{ padding: 80px 25% 65px 25%; }
+
+  @include small{ padding: 50px 10% 35px 10%; }
+
+  @include mobile{ padding: 50px 0 0 0; }
+
+
+}
+
+
+
+
+.sticky-top{
+
+  position: sticky !important;
+
+  top: 50px;
+
+  z-index: 1000;
+
+}

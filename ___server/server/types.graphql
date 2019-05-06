@@ -1,0 +1,85 @@
+# The following types define the data model of the example service
+# based on which the GraphQL API is generated
+
+type File @model {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type User @model {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  name: String!
+  description: String
+  email: String! @isUnique
+  password: String!
+  avatar: String
+  itineraries: [Itinerary!]! @relation(name: "UserItineraries")
+}
+
+
+type Itinerary @model {
+  id: ID! @isUnique
+  title: String!
+  description: String!
+  location: String!
+  startDate: String!
+  endDate: String!
+  coverImage: String!
+  style: String!
+  dificultyLevel: String!
+  budget: String!
+  published: Boolean!
+  #GALLERY VAI AQUI
+
+  designer: User! @relation(name: "UserItineraries")
+  stages: [Stage!]! @relation(name: "ItnineraryStages")
+}
+
+type Stage @model {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  title: String!
+  description: String!
+  avatar: String
+  #GALLERY VAI AQUI
+
+  itinerary: Itinerary! @relation(name: "ItnineraryStages")
+  accomodations: [Accommodation!]! @relation(name: "StageAccommodations")
+  activities: [Activity!]! @relation(name: "StageActivities")
+}
+
+type Accommodation @model {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  title: String!
+  price: String!
+  description: String!
+  link: String!
+
+  stage: Stage! @relation(name: "StageAccommodations")
+}
+
+type Activity @model {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  title: String!
+  price: String!
+  description: String!
+  link: String!
+
+  stage: Stage! @relation(name: "StageActivities")
+}
+
+
+

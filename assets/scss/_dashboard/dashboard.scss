@@ -1,0 +1,77 @@
+//@import "quill";
+@import "quill.bubble";
+@import "quill.snow";
+@import "quill.core";
+
+.ql-editor{
+
+  height: 400px;
+
+}
+
+
+
+@import "../helpers/breakpoints";
+@import "dashboard-user-itineraries";
+
+
+.dashboard-page-title{
+
+  float: left;
+
+  width: 100%;
+
+  font-size: 14px;
+
+  text-transform: uppercase;
+
+  color: #999;
+
+}
+
+.row{ margin-bottom: 80px}
+
+.dashboard-table{
+
+  float: left;
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  border: 1px solid #d9d9d9;
+
+  border-bottom: 0;
+
+  margin: 20px 0 0 0;
+
+  &--row{
+
+    float: left;
+
+    width: 100%;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #d9d9d9;
+
+    height: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    &:nth-child(even){
+      background: rgba(0,0,0,0.08);
+    }
+
+
+    button{ margin: 0 10px}
+
+  }
+
+}
